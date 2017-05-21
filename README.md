@@ -1,4 +1,6 @@
 # Android_App_ImgVid
+Now available on Google Play Store. https://play.google.com/store/apps/details?id=qin.imgvid&hl=en
+
 ImgVid is a convenient, minimal aesthetic android camera application.
 
 ImgVid not only helps to capture images and videos with minimal fuss but also has unique features.
