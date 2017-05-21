@@ -1,7 +1,7 @@
 # Android_App_ImgVid
 ImgVid is a convenient, minimal aesthetic android camera application.
 
-Camera+ not only helps to capture images and videos with minimal fuss but also has unique features.
+ImgVid not only helps to capture images and videos with minimal fuss but also has unique features.
 
 Great Interaction Experience. Utilizing full screen Immersive-Sticky Mode helps to hide the annoying system’s status and navigation bars while capturing all touch events. To get back the system bar, simply swipe from top of the screen and it will automatically hide after shortly delay or user interacts somewhere in the screen.
 
