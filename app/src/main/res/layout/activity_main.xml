@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="qin.imgvid.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:drawableRight="@mipmap/android_logo"
+        android:background="#64B5F6"
+        android:textColor="#FFEBEE"
+        android:text="Photo And Video Application"
+        android:id="@+id/welcomeButton"
+        android:elevation="6dp"
+        />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:id="@+id/recordButton"
+
+        android:drawableLeft="@mipmap/button_video"
+        android:textColor="#FFEBEE"
+        android:background="#42A5F5"
+        android:paddingLeft="4dp"
+        android:text="record"
+        android:layout_above="@+id/photoButton"
+        android:layout_alignRight="@+id/videoView"
+        android:layout_alignEnd="@+id/videoView"
+        android:elevation="6dp"/>
+
+
+
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:id="@+id/photoButton"
+        android:onClick="takePhoto"
+        android:drawableLeft="@mipmap/button_camera"
+        android:background="#64B5F6"
+        android:textColor="#FFEBEE"
+        android:paddingLeft="4dp"
+        android:text="camera"
+        android:layout_above="@+id/playButton"
+        android:layout_alignLeft="@+id/recordButton"
+        android:layout_alignStart="@+id/recordButton"
+        android:elevation="6dp"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:id="@+id/playButton"
+        android:singleLine="true"
+        android:drawableLeft="@mipmap/button_play"
+        android:background="#90CAF9"
+        android:textColor="#FFEBEE"
+        android:paddingLeft="4dp"
+        android:layout_alignBottom="@+id/capturePhotoImageView"
+        android:layout_alignLeft="@+id/photoButton"
+        android:layout_alignStart="@+id/photoButton"
+        android:text="play"
+        android:elevation="6dp"/>
+
+    <VideoView
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:id="@+id/videoView"
+
+        android:layout_below="@+id/welcomeButton"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="180dp"
+        android:id="@+id/capturePhotoImageView"
+        android:background="@android:color/background_dark"
+        android:elevation="6dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/videoView"
+        android:layout_alignStart="@+id/videoView"/>
+</RelativeLayout>
